@@ -3,3 +3,25 @@
  * purpose: styles, animation etc
  * further development: meyer reset perhaps?
  **/
+body {
+    background-color: cadetblue;
+}
+img {
+    width: 300px;
+    height: auto;
+    margin-left: 10px;
+}
+h2 {
+    padding-top: 20px;
+}
+#content {
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+}
+#exhibition {
+    text-align: center;
+    padding-bottom: 100px;
+}

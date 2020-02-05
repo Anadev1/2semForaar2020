@@ -3,23 +3,51 @@
 /* variables  (not shown in css) - or from style to real code! */
 /* selected colors for this project */
 $green: #1cc867;
-$white: #fff;
+$yellow: #ffe000;
+$blue: #0000ff;
+$cta: #ff0000;
 
 /* nested syntax, how cool is that? */
 
 /* mixins */ 
 
 /* scss samples */
-body {
-    background-color: $green;
-    color: #00ff00;
+.scene {
+    width: 99vw;
+    height: 98vh;
+    background-image: url(../../mountains-1985027_1920.jpg);
 }
-
+#birdy {
+    width: 200px;
+    animation-name: bird-flight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    float: right;
+}
+#planey {
+    width: 800px;
+    animation-name: plane-flight;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    margin-left: 2000px;
+}
+@keyframes bird-flight {
+    0% { right: 0px;top: 0px;}
+    25% { right: 700px; top: 75px;}
+    50% { top: 650px;transform: rotate(-90deg);}
+    75% { right: 1500px; transform: rotate(-45deg);}
+    100% {right: 0px;top: 0px; transform: rotate(360deg); }
+}
+@keyframes plane-flight {
+    from { right: 0px;top: 150px;}
+    to {right:4000px; top: 150px;} 
+}
 /* nested syntax */
-main {
-    p {
-        color: $white;
-    }
-}
+
+       
+    
 
 

@@ -4,16 +4,69 @@
 /* nested syntax, how cool is that? */
 /* mixins */
 /* scss samples */
-/* line 13, ../../../../../../../../../../../../../Users/per/Documents/html_root/localhost/2020-faa-2sem/2semForaar2020/sass-boilerplate/sass/style.scss */
-body {
-  background-color: #1cc867;
-  color: #00ff00;
+/* line 15, ../../Documents/2nd_Semester/Programming/2semForaar2020/sass-boilerplate/sass/style.scss */
+.scene {
+  width: 99vw;
+  height: 98vh;
+  background-image: url(../../mountains-1985027_1920.jpg);
+}
+
+/* line 20, ../../Documents/2nd_Semester/Programming/2semForaar2020/sass-boilerplate/sass/style.scss */
+#birdy {
+  width: 200px;
+  animation-name: bird-flight;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  float: right;
+}
+
+/* line 29, ../../Documents/2nd_Semester/Programming/2semForaar2020/sass-boilerplate/sass/style.scss */
+#planey {
+  width: 800px;
+  animation-name: plane-flight;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+  margin-left: 2000px;
+}
+
+@keyframes bird-flight {
+  0% {
+    right: 0px;
+    top: 0px;
+  }
+  25% {
+    right: 700px;
+    top: 75px;
+  }
+  50% {
+    top: 650px;
+    transform: rotate(-90deg);
+  }
+  75% {
+    right: 1500px;
+    transform: rotate(-45deg);
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes plane-flight {
+  from {
+    right: 0px;
+    top: 150px;
+  }
+  to {
+    right: 4000px;
+    top: 150px;
+  }
 }
 
 /* nested syntax */
-/* line 20, ../../../../../../../../../../../../../Users/per/Documents/html_root/localhost/2020-faa-2sem/2semForaar2020/sass-boilerplate/sass/style.scss */
-main p {
-  color: #fff;
-}
 
 /*# sourceMappingURL=style.css.map */
